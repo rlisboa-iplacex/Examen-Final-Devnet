@@ -1,0 +1,88 @@
+ * Serving Flask app 'gestion_usuarios_examen'
+ * Debug mode: off
+Traceback (most recent call last):
+  File "/Users/rlisboam/Examen-Final-Devnet/gestion_usuarios_examen.py", line 88, in <module>
+    app.run(host="0.0.0.0", port=5800, ssl_context=("cert.pem", "key.pem"))
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/flask/app.py", line 662, in run
+    run_simple(t.cast(str, host), port, self, **options)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/werkzeug/serving.py", line 1093, in run_simple
+    srv = make_server(
+        hostname,
+    ...<7 lines>...
+        fd=fd,
+    )
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/werkzeug/serving.py", line 930, in make_server
+    return ThreadedWSGIServer(
+        host, port, app, request_handler, passthrough_errors, ssl_context, fd=fd
+    )
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/werkzeug/serving.py", line 801, in __init__
+    ssl_context = load_ssl_context(*ssl_context)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/werkzeug/serving.py", line 644, in load_ssl_context
+    ctx.load_cert_chain(cert_file, pkey_file)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory
+ * Serving Flask app 'gestion_usuarios_examen'
+ * Debug mode: off
+Traceback (most recent call last):
+  File "/Users/rlisboam/Examen-Final-Devnet/gestion_usuarios_examen.py", line 88, in <module>
+    app.run(host="0.0.0.0", port=5800, ssl_context=("cert.pem", "key.pem"))
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/flask/app.py", line 662, in run
+    run_simple(t.cast(str, host), port, self, **options)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/werkzeug/serving.py", line 1093, in run_simple
+    srv = make_server(
+        hostname,
+    ...<7 lines>...
+        fd=fd,
+    )
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/werkzeug/serving.py", line 930, in make_server
+    return ThreadedWSGIServer(
+        host, port, app, request_handler, passthrough_errors, ssl_context, fd=fd
+    )
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/werkzeug/serving.py", line 801, in __init__
+    ssl_context = load_ssl_context(*ssl_context)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/werkzeug/serving.py", line 644, in load_ssl_context
+    ctx.load_cert_chain(cert_file, pkey_file)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory
+ * Serving Flask app 'gestion_usuarios_examen'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:5800
+ * Running on https://10.0.0.105:5800
+[33mPress CTRL+C to quit[0m
+127.0.0.1 - - [24/Jan/2026 02:05:01] "GET / HTTP/1.1" 200 -
+ * Serving Flask app 'gestion_usuarios_examen'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:5800
+ * Running on https://10.0.0.105:5800
+[33mPress CTRL+C to quit[0m
+ * Serving Flask app 'gestion_usuarios_examen'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:5800
+ * Running on https://10.0.0.105:5800
+[33mPress CTRL+C to quit[0m
+127.0.0.1 - - [24/Jan/2026 02:19:39] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [24/Jan/2026 02:21:40] "[31m[1mPOST /signup/v1 HTTP/1.1[0m" 400 -
+127.0.0.1 - - [24/Jan/2026 02:27:01] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [24/Jan/2026 02:27:16] "POST /signup/v1 HTTP/1.1" 200 -
+127.0.0.1 - - [24/Jan/2026 02:27:34] "POST /signup/v1 HTTP/1.1" 200 -
+127.0.0.1 - - [24/Jan/2026 02:34:53] "POST /login/v1 HTTP/1.1" 200 -
+127.0.0.1 - - [24/Jan/2026 02:35:10] "POST /login/v1 HTTP/1.1" 200 -
+ * Serving Flask app 'gestion_usuarios_examen'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:5800
+ * Running on https://10.0.0.105:5800
+[33mPress CTRL+C to quit[0m
+127.0.0.1 - - [24/Jan/2026 02:37:55] "POST /login/v1 HTTP/1.1" 200 -
+127.0.0.1 - - [24/Jan/2026 02:38:06] "POST /login/v1 HTTP/1.1" 200 -
