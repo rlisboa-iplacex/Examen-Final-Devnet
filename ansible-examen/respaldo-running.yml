@@ -1,0 +1,17 @@
+---
+- name: Respaldar running-config del router
+  hosts: routers
+  gather_facts: no
+
+  tasks:
+    - name: Ejecutar show running-config
+      ios_command:
+        commands:
+          - show running-config
+      register: running
+
+    - name: Guardar respaldo en archivo local
+      copy:
+        content: "{{ running.stdout[0] }}"
+        dest: "running-config.txt"
+

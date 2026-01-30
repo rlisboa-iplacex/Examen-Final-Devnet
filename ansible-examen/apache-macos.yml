@@ -1,0 +1,22 @@
+---
+- name: Instalar Apache en macOS y configurar puerto 9999
+  hosts: localhost
+  connection: local
+  gather_facts: false
+  become: no
+
+  tasks:
+    - name: Instalar Apache con Homebrew
+      homebrew:
+        name: httpd
+        state: present
+
+    - name: Cambiar puerto de escucha a 9999
+      lineinfile:
+        path: /opt/homebrew/etc/httpd/httpd.conf
+        regexp: "^Listen "
+        line: "Listen 9999"
+
+    - name: Iniciar servicio Apache
+      command: brew services start httpd
+

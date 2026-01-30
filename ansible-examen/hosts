@@ -1,0 +1,7 @@
+[routers]
+csr1kv ansible_host=10.0.0.108 ansible_user=cisco ansible_password=cisco123!
+
+[routers:vars]
+ansible_connection=network_cli
+ansible_network_os=cisco.ios.ios
+
